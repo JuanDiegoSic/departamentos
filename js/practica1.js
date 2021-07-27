@@ -1,10 +1,9 @@
 let link = document.getElementById("link");
 departamento = false;
-alert("hola?");
 
 while (departamento == false) {
   let eleccion = prompt(
-    "Escribe uno de los departamentos de Colombia para mas informacion: \n 1.Amazonas     2.Antioquia \n 3.Arauca     4.Atlantico \n 5.Bogota     6.Bolivar \n 7.Boyaca     8.Caldas \n 9.Caqueta     10.Casanare \n 11.Cauca     12.Cesar \n 13.Choco      14.Cordoba \n 15.Cundinamarca     16.Guainia \n 17.Guaviare     18.Huila \n 19.La Guajira     20.Magdalena \n 21.Meta     22.Nariño \n 23.Norte de Santander \n 24.Putumayo     25.Quindio \n 26.Risaralda      27.San Andres \n  28.Santander      29.Sucre \n 30.Tolima \n 31.Valle del cauca   \n 32.Vaupes      33.Vichada"
+    "Escribe uno de los departamentos de Colombia para mas informacion: \n 1.Amazonas     2.Antioquia \n 3.Arauca     4.Atlantico \n 5.Bogota     6.Bolivar \n 7.Boyaca     8.Caldas \n 9.Caqueta     10.Casanare \n 11.Cauca     12.Cesar \n 13.Choco      14.Cordoba \n 15.Cundinamarca     16.Guainia \n 17.Guaviare     18.Huila \n 19.La Guajira     20.Magdalena \n 21.Meta     22.Nariño \n 23.Norte de Santander \n 24.Putumayo     25.Quindio \n 26.Risaralda      27.San Andres \n  28.Santander      29.Sucre \n 30.Tolima \n 31.Valle del cauca   \n 32.Vaupes      33.Vichada \n 32.Salir"
   );
   eleccion = eleccion.toLowerCase();
   if (eleccion == "amazonas") {
@@ -140,7 +139,11 @@ while (departamento == false) {
     link.innerText = "Vichada";
     link.href = "http://www.colombiamania.com/departamentos/vichada.html";
     departamento = true;
+  } else if (eleccion == "salir") {
+    departamento = true;
+    break;
   }
+
   else{
     alert("El de partamento que escribio , no es valido intentelo de nuevo");
   }
